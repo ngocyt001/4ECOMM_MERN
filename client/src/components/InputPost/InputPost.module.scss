@@ -1,0 +1,52 @@
+.Container {
+    box-shadow: var(--border-mode);
+    border-radius: 10px;
+}
+
+.Input {
+    display: flex;
+
+    .Input-avt {
+        margin: 8px 0 8px 15px;
+    }
+
+    .Input-form {
+        width: 82%;
+        margin: 8px;
+
+        .Input-form-cnt {
+            height: 40px; 
+            border-radius: 25px; 
+            padding: 0 10px;
+        }
+    }
+}
+
+.Actions {
+    display: flex; 
+    margin: 6px 15px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    height: 40px;
+
+    .Actions-btn {
+        width: 33%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-shadow: none;
+        border-radius: 8px;
+        cursor: pointer;
+        &:hover {
+            background-color: var(--button-hover);
+        }
+    }
+
+    
+
+    .Actions-btn-icon {
+        height: 28px;
+    }
+    
+}
+

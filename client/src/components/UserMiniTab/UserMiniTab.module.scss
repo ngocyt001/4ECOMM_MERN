@@ -1,0 +1,71 @@
+.Container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    user-select: none;
+}
+
+.Content {
+    width: 100%;
+    height: 55px;
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    border-radius: var(--border-radius);
+    &:hover {
+        background-color: var(--button-hover-bold);
+    }
+}
+
+.User {
+    flex: 1;
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 500;
+    .User-nick-name {
+        font-size: 0.9rem;
+        opacity: 0.8;
+        font-weight: 400;
+    }
+
+}
+
+.Follow {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    .Follow-btn {
+        height: 38px;
+        width: 85px;
+        // margin-right: 5px;
+        border-radius: var(--border-radius);
+        border-color: transparent;
+        font-weight: 600;
+        font-size: 0.9rem;
+        color: var(--white-text);
+        background-color: var(--primary);
+        
+        &:hover {
+            cursor: pointer;
+            background-color: var(--primary-hover);
+
+        }
+        
+    }
+}
+
+.Follow-btn.Follow-btn-active {
+    background-color: var(--white);
+    border: solid 3px var(--primary);
+    color: var(--primary);
+    &:hover {
+        cursor: pointer;
+        background-color: var(--primary);
+        color: var(--white-text);
+
+    }
+}

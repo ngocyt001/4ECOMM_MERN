@@ -1,0 +1,68 @@
+@import 'normalize.css';
+
+:root {
+    --primary: #1877f2;
+    --primary-sp-light: #1876f214;
+    --primary-hover: #0452b9;
+    --black: #000;
+    --white: #fff;
+    --white-text: #fff;
+    --text-color: #161823;
+    --text-bar-title: #b0bbc8;
+    --font-family: 'ProximaNova', sans-serif;
+    --button-hover: hsl(240, 80%, 98%);
+    --button-hover-bold: #1876f213;
+    --border-mode: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    --border-radius: 10px;
+    --bg-color: #fafbfc;
+    --search-color: #f4f5f8;
+    --cardColor: rgba(255, 255, 255, 0.64);
+
+
+
+    // Default layout
+    --default-layout-header-height: 60px;
+    --default-layout-width: 1150px;
+    --default-layout-horizontal-spacer: 24px;
+}
+
+.dark {
+    --white: #161823;
+    --text-color: rgb(232, 232, 232);
+    --button-hover: hsla(240, 80%, 98%, 0.103);
+    --border-mode: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    --border-mode-primary: rgb(24, 167, 177) 0px 6px 24px 0px, rgb(49, 141, 183) 0px 0px 0px 1px;
+    --search-color: hsla(240, 80%, 98%, 0.103);
+    --bg-color: #232323;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.5;
+    font-size: 1.6rem;
+    text-rendering: optimizeSpeed;
+    color: var(--text-color);
+    overflow-y: overlay;
+}
+
+// scroll bar css
+html *::-webkit-scrollbar {
+    border-radius: 0;
+    width: 8px;
+}
+
+html *::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+html *::-webkit-scrollbar-track {
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0);
+}

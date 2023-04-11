@@ -1,0 +1,105 @@
+.Container {
+    width: 800px;
+    height:565px;
+    background-color: var(--white)
+}
+
+.Content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    // width: 100%;
+    // height: 100%;
+}
+
+.Title {
+    font-size: 1.2rem;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+}
+
+.Name {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    .Last-Name , .First-Name {
+        width: 50%;
+    }
+    .Last-Name-input, .First-Name-input {
+        width: 100%;
+        border-radius: var(--border-radius);
+    }
+}
+
+.Works {
+    width: 100%;
+    .Works-input {
+        width: 100%;
+        border-radius: var(--border-radius);
+    }
+}
+
+.Address {
+    width: 100%;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    .Address-lives , .Address-country {
+        width: 50%;
+    }
+    .Address-lives-input, .Address-country-input {
+        width: 100%;
+        border-radius: var(--border-radius);
+    }
+}
+
+.Relationship {
+    width: 100%;
+    .Relationship-input {
+        width: 100%;
+        border-radius: var(--border-radius);
+    }
+}
+
+.Skill {
+    width: 100%;
+    .Skill-input {
+        width: 100%;
+        border-radius: var(--border-radius);
+    }
+}
+
+.CoverPage {
+    display: flex;
+    font-size: 1rem;
+    width: 100%;
+    gap: 2px;
+    p {
+        width: 15%;
+    }
+}
+.Btn {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    user-select: none;
+    .Btn-submit {
+        width: 20%;
+        height: 40px;
+        font-weight: 600;
+        font-size: 0.9rem;
+        border-radius: var(--border-radius);
+        border-color: transparent;
+        color: var(--white-text);
+        background-color: var(--primary);
+        &:hover {
+            cursor: pointer;
+        background-color: var(--primary-hover);
+
+        }
+    }
+}
+

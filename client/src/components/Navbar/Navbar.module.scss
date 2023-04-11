@@ -1,0 +1,60 @@
+// .Wrapper {
+    
+    
+// }
+
+
+.Toolbar {
+    
+    
+    .logo {
+        display: flex;
+        width: 28%;
+        height: 50px;
+        align-items: center;
+        .logo-icon {
+            color: var(--primary);
+        }
+
+        .logo-search {
+            display: flex;
+            background-color: var(--search-color);
+            width: 62%;
+            margin-left: 10px;
+            height: 45px;
+            border-radius: 25px;
+            align-items: center;
+
+            .logo-search-icon {
+                color: var(--text-color);
+                margin-left: 8px;
+                height: 24px;
+                transform: translateY(3px)
+            }
+
+            .logo-search-input {
+                padding-right: 10px;
+            }
+        }
+    }
+
+    .directions {
+        width: 42%;
+    }
+
+    .user-opts {
+        display: flex;
+        justify-content: flex-end;
+        width: 28%;
+        gap: 15px;
+        align-items: center;
+        .user-opts-item {
+            height: 40px;
+            width: 40px;
+            gap: 10px;
+            // color: var(--text-color);
+        }
+        
+    }
+
+}

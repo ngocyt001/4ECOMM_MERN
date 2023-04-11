@@ -1,0 +1,2 @@
+thêm file proxy vào package để bảo vệ người khác k truy cập api
+cors: send request origin 

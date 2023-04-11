@@ -1,0 +1,119 @@
+.Container {
+    position: fixed;
+    overflow-Y: hidden;
+    height: calc(100vh - 80px);
+    &:hover {
+        overflow-Y: overlay;
+    }
+
+    &::-webkit-scrollbar {
+        width: 5px;
+        
+    }
+
+    .Title {
+        font-weight: 500;
+        font-size: 1.1rem;
+        color: var(--text-bar-title)
+    }
+}
+
+.Card-req {
+    width: '95%';
+    display: flex;
+    flex-direction: column;
+    padding: 6%;
+    border-radius: 10px;
+
+    .Card-req-info {
+        position: relative;
+        display: flex;
+        .Card-req-media {
+            height: 40px;
+            width: 40px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-right: 10px;
+            
+        }
+        .Card-req-cnt {
+            font-size: 0.9rem;
+            width: 75%;
+            font-weight: 300;
+            span {
+                font-weight: 500;
+            }
+        }
+    }
+
+    .Card-req-btn {
+        font-size: 0.9rem;
+        font-weight: 700;
+        display: flex;
+        margin-top: 10px;
+
+        .Card-req-btn-acp,
+        .Card-req-btn-deny {
+            width: 50%;
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            height: 35px;
+            border-radius: 10px;
+            &:hover {
+                cursor: pointer;
+                opacity: 0.9;
+            }
+        }
+
+        .Card-req-btn-acp {
+            background-color: var(--primary);
+            color: var(--white-text);
+            
+
+        }
+
+        .Card-req-btn-deny {
+            border: 1px solid #ccc;
+            opacity: 0.6;
+        }
+    }
+}
+
+.Card-spon {
+    width: 96%;
+    margin: auto;
+    margin-bottom: 15px;
+    .Card-spon-media {
+        position: relative;
+        
+    }
+    .Card-spon-cnt {
+        height: 100px;
+        .Card-spon-cnt-title {
+            position: absolute;
+            top: 90px;
+            font-weight: 600;
+            font-size: 1.4rem;
+            color: var(--white-text);
+            z-index: 1;
+            &::after {
+                content: "";
+                position: absolute;
+                top: -90px;
+                left: -16px;
+                display: block;
+                width: 245px;
+                height: 140px;
+                background-color: black;
+                z-index: -1;
+                opacity: 0.2;
+            }
+        }
+        .Card-spon-cnt-text {
+            margin-top: -10px;
+            font-weight: 300;
+            font-size: 0.9rem;
+        }
+    }
+}

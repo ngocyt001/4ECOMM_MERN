@@ -1,0 +1,26 @@
+
+.Content {
+    width: 100%;
+    padding: 0 36px;
+    margin-top: -20px;
+}
+
+.Tabs-item {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    font-size: 0.9rem;
+    text-transform: capitalize;
+}
+
+.Posts {
+    .Body {
+        display: flex;
+        gap: 15px;
+        .item-1 {
+            width: 42%;
+        }
+        .item-2 {
+            width: 58%;
+        }
+    }
+}
